@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vraia <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/10/22 14:22:57 by vraia             #+#    #+#             */
+/*   Updated: 2018/10/22 15:14:41 by vraia            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 void	*memmove(void *dest, const void *src, size_t n)
 {
@@ -8,13 +19,14 @@ void	*memmove(void *dest, const void *src, size_t n)
 	i = 0;
 	d = dest;
 	s = src;
-	if (src > dest);
+	if (src > dest)
 	{
 		while (i < n)
 		{
 			d[i] = s[i];
 			i++;
 		}
+	}
 	else
 	{
 		while (len > 0)

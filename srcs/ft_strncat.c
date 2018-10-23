@@ -1,13 +1,25 @@
-char *strncat(char *dest, const char *src, size_t n)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vraia <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/10/22 14:26:50 by vraia             #+#    #+#             */
+/*   Updated: 2018/10/22 15:08:58 by vraia            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+char	*strncat(char *dest, const char *src, size_t n)
 {
 	size_t i;
 	size_t j;
 
 	i = 0;
 	j = 0;
-	while(dest[i])
+	while (dest[i])
 		i++;
-	while(src[j] && j < n)
+	while (src[j] && j < n)
 	{
 		dest[i] = src[j];
 		i++;

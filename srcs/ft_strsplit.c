@@ -6,13 +6,15 @@
 /*   By: vraia <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/23 08:37:20 by vraia             #+#    #+#             */
-/*   Updated: 2018/10/23 10:54:44 by vraia            ###   ########.fr       */
+/*   Updated: 2018/10/23 16:02:36 by vraia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int	wordcount(char *s, char c)
+#include <stdlib.h>
+
+int		wordcount(char *s, char c)
 {
 	int i;
 	int count;
@@ -32,7 +34,7 @@ int	wordcount(char *s, char c)
 	return (count + 1);
 }
 
-int	count(char *s, char c, int i)
+int		count(char *s, char c, int i)
 {
 	int count;
 
@@ -64,10 +66,7 @@ char	**ft_strsplit(char const *s, char c)
 			i++;
 		split[j] = (char *)malloc(sizeof(char) * count(s, c, i));
 		while (s[i] != c && s[i])
-		{
-			split[j][k++] = s[i];
-			i++;
-		}
+			split[j][k++] = s[i++];
 		split[j][k] = '\0';
 		j++;
 	}

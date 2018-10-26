@@ -6,15 +6,19 @@
 /*   By: vraia <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/22 14:25:06 by vraia             #+#    #+#             */
-/*   Updated: 2018/10/25 18:44:18 by vraia            ###   ########.fr       */
+/*   Updated: 2018/10/25 23:13:10 by vraia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
+#include <stdlib.h>
 
 char	*ft_strdup(const char *str)
 {
 	char	*dup;
 	int		i;
 
+	i = 0;
 	if (str == NULL)
 		return (NULL);
 	while (str[i])

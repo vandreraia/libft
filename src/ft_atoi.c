@@ -6,7 +6,7 @@
 /*   By: vraia <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/22 14:21:22 by vraia             #+#    #+#             */
-/*   Updated: 2018/10/22 15:59:35 by vraia            ###   ########.fr       */
+/*   Updated: 2018/10/25 23:25:54 by vraia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_atoi(const char *nptr)
 	while (nptr[i] == ' ' || nptr[i] == '\t' || nptr[i] == '\v' ||
 			nptr[i] == '\n' || nptr[i] == '\f' || nptr[i] == '\r')
 		i++;
-	if (nptr[i] == '-' || nptr == '+')
+	if (nptr[i] == '-' || nptr[i] == '+')
 	{
 		if (nptr[i] == '-')
 			sign = -1;

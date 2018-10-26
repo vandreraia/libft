@@ -6,9 +6,11 @@
 /*   By: vraia <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/22 15:38:10 by vraia             #+#    #+#             */
-/*   Updated: 2018/10/25 16:48:14 by vraia            ###   ########.fr       */
+/*   Updated: 2018/10/25 23:10:36 by vraia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

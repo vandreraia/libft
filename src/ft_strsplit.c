@@ -6,7 +6,7 @@
 /*   By: vraia <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/23 08:37:20 by vraia             #+#    #+#             */
-/*   Updated: 2018/10/23 16:02:36 by vraia            ###   ########.fr       */
+/*   Updated: 2018/10/25 23:00:18 by vraia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 #include <stdlib.h>
 
-int		wordcount(char *s, char c)
+int		wordcount(char const *s, char c)
 {
 	int i;
 	int count;
@@ -34,7 +34,7 @@ int		wordcount(char *s, char c)
 	return (count + 1);
 }
 
-int		count(char *s, char c, int i)
+int		count(char const *s, char c, int i)
 {
 	int count;
 
@@ -70,6 +70,6 @@ char	**ft_strsplit(char const *s, char c)
 		split[j][k] = '\0';
 		j++;
 	}
-	split[j] = '\0';
+	*split[j] = '\0';
 	return (split);
 }

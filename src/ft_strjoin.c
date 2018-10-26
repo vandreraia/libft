@@ -6,10 +6,11 @@
 /*   By: vraia <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/22 14:25:54 by vraia             #+#    #+#             */
-/*   Updated: 2018/10/22 14:47:39 by vraia            ###   ########.fr       */
+/*   Updated: 2018/10/25 23:05:38 by vraia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdlib.h>
 
 char	*ft_strjoin(char const *s1, char const *s2)

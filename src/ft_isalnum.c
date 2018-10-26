@@ -6,7 +6,7 @@
 /*   By: vraia <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/22 15:34:38 by vraia             #+#    #+#             */
-/*   Updated: 2018/10/22 15:35:27 by vraia            ###   ########.fr       */
+/*   Updated: 2018/10/25 23:25:02 by vraia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 int	ft_isalnum(int c)
 {
-	return (isalpha(c) || isdigit(c));
+	return (ft_isalpha(c) || ft_isdigit(c));
 }

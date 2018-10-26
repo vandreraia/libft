@@ -6,16 +6,17 @@
 /*   By: vraia <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/23 16:02:56 by vraia             #+#    #+#             */
-/*   Updated: 2018/10/23 16:11:44 by vraia            ###   ########.fr       */
+/*   Updated: 2018/10/25 23:17:50 by vraia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr(char const *s, int fd)
+void	ft_putstr_fd(char const *s, int fd)
 {
 	int i;
 
+	i = 0;
 	while (s[i])
 	{
 		ft_putchar_fd(s[i], fd);

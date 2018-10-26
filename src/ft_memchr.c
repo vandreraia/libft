@@ -6,9 +6,11 @@
 /*   By: vraia <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/22 14:22:02 by vraia             #+#    #+#             */
-/*   Updated: 2018/10/25 16:54:31 by vraia            ###   ########.fr       */
+/*   Updated: 2018/10/25 23:21:04 by vraia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
@@ -20,7 +22,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (i < n)
 	{
 		if (str[i] == (const char)c)
-			return (str + i);
+			return ((void*)str + i);
 		i++;
 	}
 	return (NULL);

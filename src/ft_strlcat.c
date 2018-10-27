@@ -6,7 +6,7 @@
 /*   By: vraia <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/25 22:24:24 by vraia             #+#    #+#             */
-/*   Updated: 2018/10/26 20:59:31 by vraia            ###   ########.fr       */
+/*   Updated: 2018/10/27 13:01:33 by vraia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,5 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	}
 	if (end < size)
 		dst[i] = '\0';
-	return (end + strlen(src));
+	return (end + ft_strlen(src));
 }

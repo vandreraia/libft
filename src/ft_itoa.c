@@ -6,15 +6,15 @@
 /*   By: vraia <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/23 14:57:15 by vraia             #+#    #+#             */
-/*   Updated: 2018/10/23 17:34:48 by vraia            ###   ########.fr       */
+/*   Updated: 2018/10/29 11:08:47 by vraia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-void	check_negative(int *n, int *neg, int *i)
+static void	check_negative(int *n, int *neg, int *i)
 {
-	if (n < 0)
+	if (*n < 0)
 	{
 		*n *= -1;
 		*neg = 1;
@@ -22,7 +22,7 @@ void	check_negative(int *n, int *neg, int *i)
 	}
 }
 
-char	*ft_itoa(int n)
+char		*ft_itoa(int n)
 {
 	int		i;
 	int		temp;

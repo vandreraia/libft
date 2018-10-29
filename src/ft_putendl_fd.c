@@ -6,7 +6,7 @@
 /*   By: vraia <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/23 16:05:19 by vraia             #+#    #+#             */
-/*   Updated: 2018/10/25 23:16:47 by vraia            ###   ########.fr       */
+/*   Updated: 2018/10/29 11:09:26 by vraia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@
 void	ft_putendl_fd(char const *s, int fd)
 {
 	ft_putstr_fd(s, fd);
-	ft_putchar('\n');
+	ft_putchar('\n', fd);
 }

@@ -6,15 +6,13 @@
 /*   By: vraia <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/23 08:37:20 by vraia             #+#    #+#             */
-/*   Updated: 2018/10/25 23:00:18 by vraia            ###   ########.fr       */
+/*   Updated: 2018/10/29 10:30:38 by vraia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-#include <stdlib.h>
-
-int		wordcount(char const *s, char c)
+static int		wordcount(char const *s, char c)
 {
 	int i;
 	int count;
@@ -34,7 +32,7 @@ int		wordcount(char const *s, char c)
 	return (count + 1);
 }
 
-int		count(char const *s, char c, int i)
+static int		count(char const *s, char c, int i)
 {
 	int count;
 
@@ -47,7 +45,7 @@ int		count(char const *s, char c, int i)
 	return (count + 1);
 }
 
-char	**ft_strsplit(char const *s, char c)
+char			**ft_strsplit(char const *s, char c)
 {
 	int		i;
 	int		j;
@@ -64,12 +62,14 @@ char	**ft_strsplit(char const *s, char c)
 		k = 0;
 		while (s[i] == c)
 			i++;
-		split[j] = (char *)malloc(sizeof(char) * count(s, c, i));
-		while (s[i] != c && s[i])
-			split[j][k++] = s[i++];
-		split[j][k] = '\0';
-		j++;
+		if (s[i])
+		{
+			split[j] = (char *)malloc(sizeof(char) * count(s, c, i));
+			while (s[i] != c && s[i])
+				split[j][k++] = s[i++];
+			split[j++][k] = '\0';
+		}
 	}
-	*split[j] = '\0';
+	split[j] = 0;
 	return (split);
 }

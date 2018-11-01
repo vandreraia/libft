@@ -6,7 +6,7 @@
 /*   By: vraia <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/23 08:37:20 by vraia             #+#    #+#             */
-/*   Updated: 2018/10/29 10:30:38 by vraia            ###   ########.fr       */
+/*   Updated: 2018/10/30 23:10:56 by vraia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,13 @@ static int		count(char const *s, char c, int i)
 	return (count + 1);
 }
 
+static int		indexcount(char const *s, char c, int i)
+{
+	while (s[i] == c)
+		i++;
+	return (i);
+}
+
 char			**ft_strsplit(char const *s, char c)
 {
 	int		i;
@@ -53,15 +60,15 @@ char			**ft_strsplit(char const *s, char c)
 	char	**split;
 
 	if (!s)
-		return (0);
-	split = (char **)malloc(sizeof(char*) * wordcount(s, c));
+		return (NULL);
+	if (!(split = (char **)malloc(sizeof(char*) * wordcount(s, c))))
+		return (NULL);
 	i = 0;
 	j = 0;
 	while (s[i])
 	{
 		k = 0;
-		while (s[i] == c)
-			i++;
+		i = indexcount(s, c, i);
 		if (s[i])
 		{
 			split[j] = (char *)malloc(sizeof(char) * count(s, c, i));

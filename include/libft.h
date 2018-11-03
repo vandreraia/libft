@@ -6,29 +6,28 @@
 /*   By: vraia <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/24 20:29:12 by vraia             #+#    #+#             */
-/*   Updated: 2018/10/25 22:38:22 by vraia            ###   ########.fr       */
+/*   Updated: 2018/10/25 23:39:08 by vraia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# include <string.h>
 
-#include <string.h>
-
-int	ft_isdigit(int c);
-int	ft_isalpha(int c);
-int	ft_tolower(int c);
-int	ft_strnequ(char const *s1, char const *s2, size_t n);
-int	ft_isalnum(int c);
-int	ft_toupper(int c);
-int	ft_strncmp(const char *s1, const char *s2, size_t n);
-int	ft_strcmp(const char *s1, const char *s2);
-int	ft_memcmp(const void *s1, const void *s2, size_t n);
-int	ft_strequ(char const *s1, char const *s2);
-int	ft_isascii(int c);
-int	ft_isprint(int c);
-int	ft_atoi(const char *nptr);
-int	ft_isprint(int c);
+int		ft_isdigit(int c);
+int		ft_isalpha(int c);
+int		ft_tolower(int c);
+int		ft_strnequ(char const *s1, char const *s2, size_t n);
+int		ft_isalnum(int c);
+int		ft_toupper(int c);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
+int		ft_strcmp(const char *s1, const char *s2);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
+int		ft_strequ(char const *s1, char const *s2);
+int		ft_isascii(int c);
+int		ft_isprint(int c);
+int		ft_atoi(const char *nptr);
+int		ft_isprint(int c);
 char	**ft_strsplit(char const *s, char c);
 char	*ft_itoa(int n);
 char	*ft_strnstr(const char *s1, const char *s2, size_t len);

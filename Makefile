@@ -6,7 +6,7 @@
 #    By: vraia <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/10/25 17:10:20 by vraia             #+#    #+#              #
-#    Updated: 2018/10/25 18:52:15 by vraia            ###   ########.fr        #
+#    Updated: 2018/10/29 13:09:52 by vraia            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,8 +18,6 @@ SRC = $(wildcard $(SRC_DIR)/*.c)
 OBJ = $(SRC:$(SRC_DIR)/%.c=%.o)
 INCLUDE = include
 CFLAGS = -Wall -Werror -Wextra
-
-.PHONY: all fclean
 
 all: $(NAME)
 
